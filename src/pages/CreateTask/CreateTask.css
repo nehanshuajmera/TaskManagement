@@ -1,0 +1,93 @@
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.createTaskMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    width: 100vw;
+    background-color: #f7f7f7;
+}
+
+.createTaskForm {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.createTaskForm h2 {
+    margin-bottom: 0.5rem;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.createTask-form-group {
+    margin-bottom: 20px;
+}
+
+.createTask-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.createTask-input,
+.createTask-textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.createTaskBttn {
+    padding: 10px;
+    background-color: #F59E0B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.createTaskBttn:hover {
+    background-color: #FBBF24;
+}
+
+.createTask-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #F59E0B;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 999;
+    /* Ensure it appears above other elements */
+}
+
+/* Additional styling for the modal message */
+.createTask-modal p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
