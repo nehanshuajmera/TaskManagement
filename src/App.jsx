@@ -3,6 +3,7 @@ import Header from './Universal/Header'
 import HeroSection from './pages/HeroSection/HeroSection'
 import Login from './pages/Login/Login'
 import CreateTask from './pages/CreateTask/CreateTask'
+import TaskList from './pages/Task List/TaskList'
 
 export default function App() {
   return (
@@ -10,7 +11,8 @@ export default function App() {
       <Header />
       {/* <HeroSection /> */}
       {/* <Login/> */}
-      <CreateTask/>
+      {/* <CreateTask/> */}
+      <TaskList/>
     </div>
   )
 }

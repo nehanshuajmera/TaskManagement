@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
     height: 12vh;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
 }
 
 .myLogo-Heading {
-    width: 15vw;
+    width: 20vw;
     height: 10vh;
     display: flex;
     align-items: center;
